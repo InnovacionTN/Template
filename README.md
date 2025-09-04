@@ -157,4 +157,5 @@ Si encuentras algún problema o tienes preguntas, por favor abre un issue en el 
 
 ---
 
-Desarrollado con ❤️ por [Tu Nombre]
+Desarrollado con ❤️ por Alberth
+

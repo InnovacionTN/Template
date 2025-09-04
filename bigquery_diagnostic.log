@@ -1,0 +1,95 @@
+2025-09-03 15:48:10,623 - INFO - ===== Starting BigQuery Diagnostic Check =====
+2025-09-03 15:48:10,624 - INFO - Starting BigQuery diagnostic check...
+2025-09-03 15:48:10,625 - ERROR - GOOGLE_APPLICATION_CREDENTIALS_JSON not found in environment variables
+2025-09-03 15:48:10,626 - ERROR - ===== BigQuery Diagnostic Check FAILED =====
+2025-09-03 15:50:02,669 - INFO - Iniciando verificación de conexión a BigQuery...
+2025-09-03 15:50:02,669 - INFO - Proyecto: neto-cloud
+2025-09-03 15:50:02,669 - INFO - Conjunto de datos: agente_vokse
+2025-09-03 15:50:02,674 - INFO - Tabla: chat_messages
+2025-09-03 15:50:03,419 - INFO -   - Ubicación: us-central1
+2025-09-03 15:50:03,419 - INFO -   - Creado: 2025-09-01 21:08:43.739000+00:00
+2025-09-03 15:50:03,644 - INFO -   - Columnas: ['user_id', 'message_ts', 'channel_id', 'message_text', 'bot_response', 'message_type', 'input_tokens', 'output_tokens', 'total_tokens', 'created_at', 'updated_at']
+2025-09-03 15:50:03,644 - INFO - 
+Probando inserción de datos de prueba...
+2025-09-03 15:50:04,029 - ERROR - ERROR durante la prueba de inserción: 403 POST https://bigquery.googleapis.com/bigquery/v2/projects/neto-cloud/datasets/agente_vokse/tables/chat_messages/insertAll?prettyPrint=false: Access Denied: Table neto-cloud:agente_vokse.chat_messages: Permission bigquery.tables.updateData denied on table neto-cloud:agente_vokse.chat_messages (or it may not exist).
+Traceback (most recent call last):
+  File "D:\IA\Rebeca\template_ia\check_bigquery.py", line 103, in check_bigquery_connection
+    errors = client.insert_rows_json(table_ref, [test_data])
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\cloud\bigquery\client.py", line 3992, in insert_rows_json
+    response = self._call_api(
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\cloud\bigquery\client.py", line 861, in _call_api
+    return call()
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\cloud\_http\__init__.py", line 494, in api_request
+    raise exceptions.from_http_response(response)
+google.api_core.exceptions.Forbidden: 403 POST https://bigquery.googleapis.com/bigquery/v2/projects/neto-cloud/datasets/agente_vokse/tables/chat_messages/insertAll?prettyPrint=false: Access Denied: Table neto-cloud:agente_vokse.chat_messages: Permission bigquery.tables.updateData denied on table neto-cloud:agente_vokse.chat_messages (or it may not exist).
+2025-09-03 15:51:20,930 - INFO - Iniciando verificación de conexión a BigQuery...
+2025-09-03 15:51:20,930 - INFO - Proyecto: neto-cloud
+2025-09-03 15:51:20,930 - INFO - Conjunto de datos: agente_vokse
+2025-09-03 15:51:20,930 - INFO - Tabla: chat_messages
+2025-09-03 15:51:21,419 - INFO -   - Ubicación: us-central1
+2025-09-03 15:51:21,419 - INFO -   - Creado: 2025-09-01 21:08:43.739000+00:00
+2025-09-03 15:51:21,640 - INFO -   - Columnas: ['user_id', 'message_ts', 'channel_id', 'message_text', 'bot_response', 'message_type', 'input_tokens', 'output_tokens', 'total_tokens', 'created_at', 'updated_at']
+2025-09-03 15:51:21,640 - INFO - 
+Probando inserción de datos de prueba...
+2025-09-03 15:51:21,730 - ERROR - ERROR durante la prueba de inserción: 403 POST https://bigquery.googleapis.com/bigquery/v2/projects/neto-cloud/datasets/agente_vokse/tables/chat_messages/insertAll?prettyPrint=false: Access Denied: Table neto-cloud:agente_vokse.chat_messages: Permission bigquery.tables.updateData denied on table neto-cloud:agente_vokse.chat_messages (or it may not exist).
+Traceback (most recent call last):
+  File "D:\IA\Rebeca\template_ia\check_bigquery.py", line 103, in check_bigquery_connection
+    errors = client.insert_rows_json(table_ref, [test_data])
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\cloud\bigquery\client.py", line 3992, in insert_rows_json
+    response = self._call_api(
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\cloud\bigquery\client.py", line 861, in _call_api
+    return call()
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\cloud\_http\__init__.py", line 494, in api_request
+    raise exceptions.from_http_response(response)
+google.api_core.exceptions.Forbidden: 403 POST https://bigquery.googleapis.com/bigquery/v2/projects/neto-cloud/datasets/agente_vokse/tables/chat_messages/insertAll?prettyPrint=false: Access Denied: Table neto-cloud:agente_vokse.chat_messages: Permission bigquery.tables.updateData denied on table neto-cloud:agente_vokse.chat_messages (or it may not exist).
+2025-09-03 16:00:59,425 - INFO - Iniciando verificación de conexión a BigQuery...
+2025-09-03 16:00:59,426 - INFO - Proyecto: neto-cloud
+2025-09-03 16:00:59,426 - INFO - Conjunto de datos: agente_vokse
+2025-09-03 16:00:59,426 - INFO - Tabla: chat_messages
+2025-09-03 16:01:00,114 - INFO -   - Ubicación: us-central1
+2025-09-03 16:01:00,114 - INFO -   - Creado: 2025-09-01 21:08:43.739000+00:00
+2025-09-03 16:01:00,634 - INFO -   - Columnas: ['user_id', 'message_ts', 'channel_id', 'message_text', 'bot_response', 'message_type', 'input_tokens', 'output_tokens', 'total_tokens', 'created_at', 'updated_at']
+2025-09-03 16:01:00,636 - INFO - 
+Probando inserción de datos de prueba...
+2025-09-03 16:01:00,730 - ERROR - ERROR durante la prueba de inserción: 403 POST https://bigquery.googleapis.com/bigquery/v2/projects/neto-cloud/datasets/agente_vokse/tables/chat_messages/insertAll?prettyPrint=false: Access Denied: Table neto-cloud:agente_vokse.chat_messages: Permission bigquery.tables.updateData denied on table neto-cloud:agente_vokse.chat_messages (or it may not exist).
+Traceback (most recent call last):
+  File "D:\IA\Rebeca\template_ia\check_bigquery.py", line 103, in check_bigquery_connection
+    errors = client.insert_rows_json(table_ref, [test_data])
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\cloud\bigquery\client.py", line 3992, in insert_rows_json
+    response = self._call_api(
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\cloud\bigquery\client.py", line 861, in _call_api
+    return call()
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\Juan\AppData\Roaming\Python\Python39\site-packages\google\cloud\_http\__init__.py", line 494, in api_request
+    raise exceptions.from_http_response(response)
+google.api_core.exceptions.Forbidden: 403 POST https://bigquery.googleapis.com/bigquery/v2/projects/neto-cloud/datasets/agente_vokse/tables/chat_messages/insertAll?prettyPrint=false: Access Denied: Table neto-cloud:agente_vokse.chat_messages: Permission bigquery.tables.updateData denied on table neto-cloud:agente_vokse.chat_messages (or it may not exist).
+2025-09-03 16:05:54,262 - INFO - Iniciando verificación de conexión a BigQuery...
+2025-09-03 16:05:54,262 - INFO - Proyecto: neto-cloud
+2025-09-03 16:05:54,262 - INFO - Conjunto de datos: agente_vokse
+2025-09-03 16:05:54,262 - INFO - Tabla: chat_messages
+2025-09-03 16:05:54,941 - INFO -   - Ubicación: us-central1
+2025-09-03 16:05:54,941 - INFO -   - Creado: 2025-09-01 21:08:43.739000+00:00
+2025-09-03 16:05:55,176 - INFO -   - Columnas: ['user_id', 'message_ts', 'channel_id', 'message_text', 'bot_response', 'message_type', 'input_tokens', 'output_tokens', 'total_tokens', 'created_at', 'updated_at']
